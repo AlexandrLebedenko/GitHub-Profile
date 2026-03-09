@@ -1,0 +1,37 @@
+@use "sass:map";
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap");
+$color-white: #cdd5e0; //
+$color-black: #111729; //
+$color-light-gray: #97a3b6; //
+$color-gray: #364153; //
+$color-dark-gray: #20293a; //
+$color-blue: #1d1b48; //
+$text-styles: (
+  large-text: (
+    font-size: 2rem,
+    font-weight: 600,
+    color: $color-black,
+  ),
+  title-text: (
+    font-size: 1.25rem,
+    font-weight: 400,
+    color: $color-black,
+  ),
+  body-text: (
+    font-size: 1rem,
+    font-weight: 400,
+    color: $color-white,
+  ),
+  small-text: (
+    font-size: 0.75rem,
+    font-weight: 700,
+    color: $color-white,
+  ),
+);
+@mixin text-format($type) {
+  $styles: map.get($text-styles, $type);
+  font-family: "Outfit", sans-serif;
+  font-size: map.get($styles, font-size);
+  font-weight: map.get($styles, font-weight);
+  color: map.get($styles, color);
+}
