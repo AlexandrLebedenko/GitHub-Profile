@@ -13,15 +13,10 @@ function MainPage() {
   const handleSelectUser = async (user) => {
     setSelectedUser(user);
     setIsLoading(true);
-
     const repos = await getUserRepos(user.login);
     setRepositories(repos);
     setIsLoading(false);
   };
-
-  if (isLoading) {
-    return <div>Loading repositories...</div>;
-  }
   return (
     <main className={styles.main}>
       <Header onSelectUser={handleSelectUser}></Header>

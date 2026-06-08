@@ -2,7 +2,7 @@ import styles from "./RepositoriesGrid.module.scss";
 import RepositoryCard from "@/entities/Repository/ui/RepositoryCard";
 function RepositoriesGrid({ repositories = [] }) {
   if (!repositories.length) {
-    return <div className={styles.empty}>No repositories found</div>;
+    return null;
   }
   return (
     <div>

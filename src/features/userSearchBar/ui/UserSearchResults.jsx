@@ -1,23 +1,5 @@
 import styles from "./UserSearchResults.module.scss";
 function UserSearchResults({ user, isLoading, notFound, onSelect }) {
-  // Состояние загрузки
-  if (isLoading) {
-    return (
-      <div className={styles.searchBarResults}>
-        <p>Loading user data...</p>
-      </div>
-    );
-  }
-
-  // Пользователь не найден
-  if (notFound) {
-    return (
-      <div className={styles.searchBarResults}>
-        <p>User not found</p>
-      </div>
-    );
-  }
-
   // Нет данных (ни загрузка, ни ошибка, ни пользователь)
   if (!user) {
     return null;
