@@ -1,0 +1,23 @@
+@use "@/app/styles/variables" as *;
+.tab {
+  @include text-format(body-text);
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  background-color: $color-black;
+  max-width: fit-content;
+}
+.label {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -25%;
+    right: -2.5rem;
+    border-left: 1px solid $color-gray;
+    height: 150%;
+    margin: 0 1.25rem;
+  }
+}
+.value {
+  margin-left: 2.5rem;
+}

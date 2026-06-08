@@ -1,0 +1,10 @@
+@use "@/app/styles/variables" as *;
+.header {
+  margin: auto;
+  background-image: url("@/assets/backgrounds/hero-image-github-profile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 2rem 3.5rem 2rem;
+  height: 240px;
+}
