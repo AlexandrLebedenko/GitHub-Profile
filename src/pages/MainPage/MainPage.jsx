@@ -22,7 +22,7 @@ function MainPage() {
       <Header onSelectUser={handleSelectUser}></Header>
       <Container>
         <UserProfile user={selectedUser}></UserProfile>
-        <RepositoriesGrid repositories={repositories}></RepositoriesGrid>
+        <RepositoriesGrid repositories={repositories} username={selectedUser?.login}></RepositoriesGrid>
       </Container>
     </main>
   );

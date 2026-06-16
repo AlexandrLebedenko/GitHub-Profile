@@ -11,5 +11,10 @@
   margin: auto;
   input {
     margin-left: 0.75rem;
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px $color-dark-gray inset !important;
+      box-shadow: 0 0 0 30px $color-dark-gray inset !important;
+      -webkit-text-fill-color: $color-white !important;
+    }
   }
 }
