@@ -9,9 +9,11 @@
 
 ## <a id="general-info">⭐ General info</a>
 
+GitHub Profile Viewer is a web application for searching and viewing GitHub user profiles. Allowing users to quickly find information about developers, their repositories, and activity.
+
 ## <a id="Illustrations">🖼️ Preview</a>
 
-<a style="font-size: 24px"></a>
+<a style="font-size: 24px">https://alexandrlebedenko.github.io/GitHub-Profile/</a>
 
 ## <a id="notice">🧾 Notice</a>
 
