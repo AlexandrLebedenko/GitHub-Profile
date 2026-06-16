@@ -2,6 +2,7 @@ import styles from "./RepositoryCard.module.scss";
 import licenseIcon from "@/assets/icons/Chield_alt.svg";
 import branchIcon from "@/assets/icons/Nesting.svg";
 import starIcon from "@/assets/icons/Star.svg";
+import { formatRelativeTime } from "@/shared/utils/formatDate";
 function RepositoryCard({ name, description, license, licenseName, forks, stars, update }) {
   return (
     <div className={styles.card}>
@@ -22,7 +23,7 @@ function RepositoryCard({ name, description, license, licenseName, forks, stars,
           <img src={starIcon} alt="star icon" />
           <span>{stars}</span>
         </p>
-        <span className={styles["cardDetails__update"]}>updated {update} days ago</span>
+        <span className={styles["cardDetails__update"]}>updated {formatRelativeTime(update)}</span>
       </div>
     </div>
   );

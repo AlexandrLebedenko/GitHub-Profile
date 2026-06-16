@@ -38,7 +38,7 @@ function RepositoriesGrid({ repositories = [], username }) {
             licenseName={repo.license?.["spdx_id"]}
             forks={repo.forks}
             stars={repo.stargazers_count}
-            update={repo.update}
+            update={repo.updated_at}
           ></RepositoryCard>
         ))}
       </div>
